@@ -6,7 +6,7 @@
     {
         $sum = 0;
         foreach($marksArr as $i)
-        {
+         {
             $sum += $i;
         }
 
