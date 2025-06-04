@@ -1,7 +1,7 @@
 <?php
 
 
-    $servername  = "locahost";
+    $servername  = "localhost";
     $username  ="root";
     $password = "root";
     $database = "pp";
@@ -20,38 +20,38 @@
     }
 
 
-    // // sql query
-    // $query = "select * from `p`";
-
-    // $result = mysqli_query($conn,$sql);
-
-
-    // //find the number of records returned
-    // $num = mysqli_num_rows($result);
-
-    // echo $num;
+    // sql query
+    $sql = "select * from `p`";
+    
+    $result = mysqli_query($conn,$sql);
 
 
+    //find the number of records returned
+    $num = mysqli_num_rows($result);
 
-    // // Display the rows returned by the sql query 
-    // if($row = mysqli_fetch_assoc($result))
-    // {
-    //     // fetching the row
-    //     // $row = mysqli_fetch_assoc($result);
-    //     // echo $row;
-    //     // echo "<br>";
-    //     // $row = mysqli_fetch_assoc($result);
-    //     // echo var_dump($row);
-    //     // echo "<br>";
-
-    //     // we can fetch using while loop
-    //     $row = mysqli_fetch_assoc($result);
-
-    //     echo $row['email']." ".$row['password'];
+    echo $num;
 
 
 
-    // }
+    // Display the rows returned by the sql query 
+    if($row = mysqli_fetch_assoc($result))
+    {
+        // fetching the row
+        // $row = mysqli_fetch_assoc($result);
+        // echo $row;
+        // echo "<br>";
+        // $row = mysqli_fetch_assoc($result);
+        // echo var_dump($row);
+        // echo "<br>";
+
+        // we can fetch using while loop
+        $row = mysqli_fetch_assoc($result);
+
+        echo $row['email']." ".$row['password'];
+
+
+
+    }
     
 
 
